@@ -1,0 +1,58 @@
+{
+  "name": "mirage",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.2.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "graphql": "^15.3.0",
+    "graphql-request": "^3.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3",
+    "typescript": "3.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test-watch": "react-scripts test --env=jest-environment-jsdom-sixteen",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@test/utils$": "<rootDir>/src/test/utils"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{tsx,ts}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "src/test"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@miragejs/graphql": "^0.1.4",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "miragejs": "^0.1.41"
+  }
+}
